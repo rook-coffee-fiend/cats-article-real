@@ -1,5 +1,5 @@
 <script>
-	import {review} from './reviews.js';
+	import {review} from './rewards.js';
 	
 	let selected;
 	$:console.log(selected)
@@ -36,7 +36,7 @@
 					<p>{descr}</p>
 				</div>
 			</div>
-			<footer on:click={toggleBackFront} data-card-id={i}>{position}</footer>
+			<!--<footer on:click={toggleBackFront} data-card-id={i}>{position}</footer>-->
 		</div>
 	{/each}
 </div>	
@@ -114,17 +114,17 @@
 
 	}	
 
-	footer {
+/*	footer { 
 		width: 200px;
 		font-weight: 800;
 		padding: 5px 2px;
 		text-align: center;
 		border: 1px solid darkgray;
 		border-top: 1px solid black;
-/* 		box-shadow: 0 0 2px black; */
+ 		box-shadow: 0 0 2px black; 
 		cursor: pointer;
 		transition: .3s all;
-	}
+	} 
 	
 	footer:hover {
 		color: #fff;
@@ -135,7 +135,7 @@
 	footer:active {
 		color: #000;
 		background-color: #888
-	}
+	}*/
 
 		/* Three columns side by side */
 	/* .column {
